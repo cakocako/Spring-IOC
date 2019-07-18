@@ -5,12 +5,9 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
-<!-- bean dependency outfit  + constructor -->
-    <bean id="myOutfit" class="fr.wildcodeschool.thewizardproject.models.Outfit">
-    </bean>
-<!--construtor-->
-    <bean id="theWizard" class="fr.wildcodeschool.thewizardproject.models.Gandalf">
-    <constructor-arg ref="myOutfit"/>
-    </bean>  
+
+
+     <context:component-scan base-package="fr.wildcodeschool.thewizardproject.models">
+    </context:component-scan> 
 
 </beans>

@@ -1,11 +1,14 @@
 package fr.wildcodeschool.thewizardproject.models;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Gandalf implements WizardInterface{
 
-    private Outfit myOutfit;
+    private OutfitInterface outfit;
 
-    public Gandalf(Outfit theOutfit) {
-        myOutfit = theOutfit;
+    public Gandalf(OutfitInterface theOutfit) {
+        outfit = theOutfit;
     }
 
     @Override
@@ -15,7 +18,7 @@ public class Gandalf implements WizardInterface{
 
     @Override
     public String changeDress() {
-        return this.myOutfit.changeDress();
+        return outfit.color();
     }
     
 }

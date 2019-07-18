@@ -1,11 +1,16 @@
 package fr.wildcodeschool.thewizardproject.models;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component("theWizard")
 public class Dumbeldore implements WizardInterface{
 
-    private Outfit myOutfit;
+    private OutfitInterface outfit;
 
-    public Dumbeldore(Outfit theOutfit) {
-        myOutfit = theOutfit;
+    @Autowired
+    public Dumbeldore(OutfitInterface theOutfit) {
+        outfit = theOutfit;
     }
 
 
@@ -16,7 +21,7 @@ public class Dumbeldore implements WizardInterface{
 
     @Override
     public String changeDress() {
-        return this.myOutfit.changeDress();
+        return outfit.color();
     }
 
 }
