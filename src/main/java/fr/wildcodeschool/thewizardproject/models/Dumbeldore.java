@@ -16,7 +16,7 @@ public class Dumbeldore implements WizardInterface{
 
     @Override
     public String giveAdvice() {
-        return "Heureusement qu’il fait nuit. Je n’ai jamais autant rougi depuis le jour où Madame Pomfresh m’a dit qu’elle trouvait mes nouveaux cache-oreilles ravissants";
+        return "Fortunately it's dark. I've never blushed so much since Madam Pomfrey told me she found my new lovely earmuffs";
     }
 
     @Override

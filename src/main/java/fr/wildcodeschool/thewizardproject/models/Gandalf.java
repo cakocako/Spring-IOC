@@ -13,7 +13,7 @@ public class Gandalf implements WizardInterface{
 
     @Override
     public String giveAdvice() {
-        return "Un magicien n'est jamais en retard, Frodon Sacquet, ni en avance d'ailleurs, il arrive précisément à l'heure prévue.";
+        return "A wizard is never late, Frodo Baggins, nor in advance, he arrives precisely at the scheduled time.";
     }
 
     @Override
